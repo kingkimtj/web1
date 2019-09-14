@@ -1,0 +1,31 @@
+﻿<head>
+연습용 웹
+</head>
+<body>
+ <h1>감정의 쓰레기통</h1>
+ <input id="change" type="button" value="애들갬성"
+  onclick="
+   var target = document.querySelector('body');
+   if(this.value === '애들갬성'){
+     target.style.backgroundColor = 'purple';
+     target.style.color = 'white';
+     this.value = '어른갬성';
+
+    }else{
+     target.style.backgroundColor = 'white';
+     target.style.color = 'black';
+     this.value = '애들갬성';
+   }
+  ">
+
+ 
+ <h2>건설장비반-어이!</h2>
+ <script> 
+  var crew = ['야빛','태종','미스터한','순혁','동기','진우']
+  var i = 0;
+  while(i < crew.length){
+   document.write('<li>'+crew[i]+'</li>');
+   i=i+1;
+  }
+ </script>
+</body>
